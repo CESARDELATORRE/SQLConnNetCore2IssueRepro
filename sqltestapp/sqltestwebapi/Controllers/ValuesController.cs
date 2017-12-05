@@ -17,7 +17,7 @@ namespace sqltestwebapi.Controllers
         [HttpGet("dapper")]
         public async Task<IActionResult> GetDapper()
         {
-            var connectionString = "Server=tcp:eshopsql-e3h5ug5xd3rfs.database.windows.net,1433;Initial Catalog=orderingdb;Persist Security Info=False;User ID=eshop;Password=Pass@word!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Max Pool Size=400;Connection Timeout=30;";
+            var connectionString = "Server=tcp:eshopsql-e3h5ug5xd3rfs.database.windows.net,1433;Initial Catalog=orderingdb;Persist Security Info=False;User ID=eshop;Password=YOUR-PASSWORD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Max Pool Size=400;Connection Timeout=30;";
 
             using (var connection = new SqlConnection(connectionString))
             {
